@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Made</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/4ceabe38a1.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+</head>
+
+<body>
+
+<div class="homebtn"><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
+
+
+  <!-- JS -->
+
+  <script>
+    const flipFunc = () => {
+      document.querySelector(".flip-card-inner").style.transform = "rotateY(180deg)";
+      document.querySelector(".gitBtn").style.transform = "rotateY(180deg)";
+      document.querySelector(".ytBtn").style.transform = "rotateY(180deg)";
+      document.querySelector(".shareBtn").style.transform = "rotateY(180deg)";
+    }
+
+    const flipFunc2 = () => {
+      document.querySelector(".flip-card-inner").style.transform = "rotateY(0deg)";
+      document.querySelector(".gitBtn").style.transform = "rotateY(0deg)";
+      document.querySelector(".shareBtn").style.transform = "rotateY(0deg)";
+      document.querySelector(".ytBtn").style.transform = "rotateY(0deg)";
+    }
+  </script>
+
+  <!-- CSS -->
+
+  <style>
+    :root {
+      --body-mat-black: #1e1a1d;
+      --navy-blue: #020442;
+      --violet: #760772;
+      --light-blue: #300097;
+      --purple: #6e17ff;
+      --offwhite: rgb(234, 215, 215);
+      --green: #2ad11e;
+      --pink: #e467e6;
+      --yellow: rgb(255, 248, 49);
+      --orange: rgb(240, 137, 63);
+      --grey: rgb(161, 161, 161);
+      --royal-violet: rgb(41, 4, 74);
+      --dark-violet: #1F1D36;
+      --smooth-violet: #3f3752;
+      --violet-2: #3B185F;
+    }
+
+    .homebtn{
+    background-color: var(--purple);
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    border-radius: 50%;
+    margin: 20px;
+    bottom: 0;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.homebtn:hover{
+    background-color: var(--light-blue);
+    transition: 0.2s;
+}
+
+a:hover{
+color: white;
+}
+
+    .moreBtn {
+      font-size: 22px;
+      background-color: var(--dark-violet);
+      margin: 10px;
+      height: 35px;
+      border-radius: 50%;
+      width: 35px;
+      color: var(--offwhite);
+      cursor: pointer;
+      transition: 0.3s;
+
+    }
+
+    .moreBtn:hover {
+      background-color: var(--dark-violet);
+      transition: 0.3s;
+    }
+
+    .lan {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--yellow);
+      border-radius: 20px;
+      width: 75%;
+      margin: auto;
+      padding: 5px;
+      color: var(--dark-violet);
+    }
+
+    .heading {
+      width: 200px;
+      margin: auto;
+      font-size: 30px;
+    }
+
+    .desc {
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      width: 200px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 320px;
+      height: 300px;
+      perspective: 800px;
+      padding: 20px;
+    }
+
+    .img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      border-radius: 20px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+      background-color: var(--body-mat-black);
+      color: white;
+      transform: rotateY(180deg);
+      padding: 20px;
+    }
+
+    .optionsbar {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      z-index: 4;
+      height: 50px;
+      width: 100%;
+      bottom: 0;
+      background-color: var(--yellow);
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    .options-icon {
+      position: relative;
+      font-size: 20px;
+      padding: 10px;
+      margin-right: 5px;
+      margin-left: 5px;
+      transition: 0.6s;
+    }
+
+    .ytBtn a:hover {
+      color: red;
+      transition: 0.2s;
+    }
+
+    .gitBtn:hover {
+      color: #ad30b1;
+      transition: 0.2s;
+    }
+
+    .viewBtn:hover {
+      color: rgb(57, 48, 227);
+      transition: 0.2s;
+    }
+
+    .shareBtn:hover {
+      color: rgb(29, 15, 148);
+      transition: 0.2s;
+    }
+
+    body {
+      background-color: var(--dark-violet);
+    }
+
+    .projects {
+      padding-top: 80px;
+      height: 100%;
+    }
+
+    pro {
+      color: var(--yellow);
+    }
+
+    .eye1 {
+      margin-right: -20px;
+    }
+
+    .content {
+      display: block;
+      position: absolute;
+      font-size: 50px;
+    }
+
+    .info {
+      position: absolute;
+      margin-top: 70px;
+    }
+  </style>
+
+  <!-- MAIN BODY -->
+
+  <div class="projects">
+
+    <!-- Heading -->
+
+    <div class="projectsHeading text-5xl font-bold text-white text-center">
+      <pro>Projects</pro> Made <lord-icon class="eye1" src="https://cdn.lordicon.com/hbvgknxo.json" class="eye1"
+        trigger="loop" style="width:60px;height:70px">
+      </lord-icon>
+      <lord-icon src="https://cdn.lordicon.com/hbvgknxo.json" trigger="loop" style="width:70px;height:70px">
+      </lord-icon>
+    </div>
+
+    <div class="cardcontainer">
+      <div class="div1">
+       
+            <!-- CARD 1-->
+            <div class="flip-card" onmouseleave="flipFunc2(this)">
+          <div class="flip-card-inner">
+
+            <div class="flip-card-front">
+              <img class="img"
+                src="https://blog.dupontregistry.com/wp-content/uploads/2022/02/aventador-ultimae-scaled.jpg"
+                alt="Avatar">
+
+              <div class="optionsbar">
+                <div class="options-icon viewBtn"><i class="fa-solid fa-eye"></i></div>
+                <div class="options-icon gitBtn"><i class="fa-brands fa-github"></i></div>
+                <div class="moreBtn" onclick="flipFunc()"><i class="fa-solid fa-circle-info"></i></div>
+                <div class="options-icon ytBtn"><a href="https://www.youtube.com/TechnoTrove"><i
+                      class="fa-brands fa-youtube"></i></a></div>
+                <div class="options-icon shareBtn"><i class="fa-solid fa-share"></i></div>
+              </div>
+            </div>
+
+            <div class="flip-card-back">
+
+              <h1 class="heading">Car Controller Game</h1>
+
+              <p class="desc">the languages/frameworks I used to build this 👇</p>
+              <p class="lan">C# , Unity</p>
+            </div>
+          </div>
+          </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</body>
+
+</html>

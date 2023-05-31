@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <link rel="stylesheet" href="achstyle.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4ceabe38a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <script>
+    $(document).ready(function(){
+  $('body').bind('cut copy paste',function (e){
+    e.preventDefault();
+  })
+  $("body").on("contextmenu",function(e){
+    return false;
+  })
+})
+  </script>
+  
+  <div class="heading text-white text-5xl font-bold text-center mt-10"><ach>Achievements</ach> Unlocked <lord-icon
+    src="https://cdn.lordicon.com/azartkjs.json"
+    trigger="loop"
+    style="width:70px;height:70px">
+</lord-icon></div>
+
+<div class="homebtn"><a href="main.html"><i class="fa-solid fa-house"></i></a></div>
+
+
+<!-- COUNTER SECTION -->
+
+<div class="av-section">
+
+  <script>
+    $(document).ready(function() {
+
+var counters = $(".num");
+var countersQuantity = counters.length;
+var counter = [];
+
+for (i = 0; i < countersQuantity; i++) {
+  counter[i] = parseInt(counters[i].innerHTML);
+}
+
+var count = function(start, value, id) {
+  var localStart = start;
+  setInterval(function() {
+    if (localStart < value) {
+      localStart++;
+      counters[id].innerHTML = localStart;
+    }
+  }, 40);
+}
+
+for (j = 0; j < countersQuantity; j++) {
+  count(0, counter[j], j);
+}
+});
+  </script>
+
+  <div class="box"><lord-icon
+  src="https://cdn.lordicon.com/gkstbnbz.json"
+  trigger="loop"
+  style="width:250px;height:250px">
+</lord-icon><div class="lg"><div class="num">7</div>+</div><div class="sm">years of</div><div class="con">Work<br>Experience</div></div>
+
+<div class="box"><lord-icon
+  src="https://cdn.lordicon.com/jnlncdtk.json"
+  trigger="loop"
+  style="width:250px;height:250px">
+</lord-icon><div class="lg"><div class="num">100</div>+</div><div class="sm">creative</div><div class="con">Projects<br>Completed</div></div>
+
+<div class="box"><lord-icon
+  src="https://cdn.lordicon.com/secxpvll.json"
+  trigger="loop"
+  style="width:250px;height:250px">
+</lord-icon>
+<div class="lg"><div class="num">500</div>+</div><div class="sm">people are</div><div class="con">Connected<br>Globally</div></div>
+
+</div>
+
+
+<!-- GRID VIEW -->
+<div class="grid-container">
+    <div class="block-grid">
+      <div class="block-panel">
+        <div class="block-content">
+          <h1>title 1</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate iusto quam excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat corporis deleniti vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugit officia exercitationem.</p>
+
+        </div>
+      </div>
+      <div class="block-panel">
+        <div class="block-content">
+          <h1>title 2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobis.</p>
+        </div>
+      </div>
+      <div class="block-panel">
+        <div class="block-content">
+          <h1>title 3</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobis</p>
+        </div>
+      </div>
+      <div class="block-panel">
+        <div class="block-content">
+          <h1>Advantage</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobis</p>
+        </div>
+      </div>
+      <div class="block-panel">
+        <div class="block-content">
+          <h1>title 5</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobisorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobis.</p>
+        </div>
+      </div>
+      <div class="block-panel">
+        <div class="block-content">
+          <h1>title 6</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobis.</p>
+        </div>
+      </div>
+      <div class="block-panel">
+        <div class="block-content">
+          <h1>title 7</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobis.orem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobisorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga
+            ducimus nobis</p>
+        </div>
+      </div>
+      <div class="block-panel">
+        <div class="block-content">
+          <h1>title 8</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga ducimus nobis.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  </div>
+
+</body>
+</html>
